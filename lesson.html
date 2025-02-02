@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Welcome Page -->
+        <div class="welcome-page">
+            <div class="header">
+                <h1 class="title">🐍 Python Adventures! 🚀</h1>
+                <p class="subtitle">Ready to become a coding superhero?</p>
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="emoji">🎮</div>
+                        <h3>Learn by Playing</h3>
+                        <p>Complete fun coding missions and unlock new powers!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="emoji">🏆</div>
+                        <h3>Earn Rewards</h3>
+                        <p>Solve puzzles and become a Python master!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="emoji">🌟</div>
+                        <h3>Start Easy</h3>
+                        <p>Begin with simple steps and grow your skills!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="emoji">🚀</div>
+                        <h3>Level Up</h3>
+                        <p>Challenge yourself with advanced missions!</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="start-btn" class="start-btn">Start Your Adventure! 🚀</button>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-value">8+</div>
+                    <div>Perfect for ages 8 and up</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12</div>
+                    <div>Fun lessons to complete</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">0</div>
+                    <div>Coding experience needed</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lesson Page -->
+        <div class="lesson-page" id="lesson-page" style="display: none;">
+            <h2 class="lesson-title">Choose Your Mission! 🎯</h2>
+            <p class="lesson-description">Select a coding mission below to start your Python adventure!</p>
+
+            <div class="lesson-cards-container">
+                <!-- Lesson cards will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Python Tutor Page -->
+        <div class="lesson-view" id="lesson-view" style="display: none;">
+            <button class="button btn-secondary" onclick="goBack()">Back</button>
+            <h2 id="lesson-title"></h2>
+            <p id="lesson-task"></p>
+            <textarea id="code-area" placeholder="Write your Python code here..."></textarea>
+            <button class="button btn-primary" onclick="checkCode()">Run Code</button>
+            <button class="button" onclick="showHint()">Need a Hint?</button>
+            <p id="hint" style="display: none;"></p>
+            <div class="output" id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python for Kids</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #4f46e5, #d946ef, #ec4899);
+            color: white;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .floating-elements span {
+            position: absolute;
+            font-size: 3rem;
+            animation: float 3s infinite ease-in-out;
+        }
+        .element-1 { top: 20%; left: 10%; }
+        .element-2 { top: 40%; right: 15%; }
+        .element-3 { bottom: 30%; left: 25%; }
+        .element-4 { top: 30%; right: 25%; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .features, .stats {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .card, .stat {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            color: black;
+            transition: transform 0.3s;
+        }
+        .card:hover, .stat:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            background: purple;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="floating-elements">
+            <span class="float element-1">🐍</span>
+            <span class="float element-2">💻</span>
+            <span class="float element-3">🚀</span>
+            <span class="float element-4">⭐</span>
+        </div>
+
+        <div class="content">
+            <h1 class="title">Python for Kids!</h1>
+            <p class="subtitle">Begin Your Coding Adventure Today! 🎮</p>
+
+            <div class="features">
+                <div class="card">
+                    <div class="icon">👶</div>
+                    <h3>Kid-Friendly</h3>
+                    <p>Learn coding with fun and easy steps!</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🎯</div>
+                    <h3>Interactive Games</h3>
+                    <p>Play and learn at your own pace!</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🏆</div>
+                    <h3>Win Rewards</h3>
+                    <p>Earn badges as you master Python!</p>
+                </div>
+            </div>
+
+            <div class="character-section">
+                <div class="character-card">
+                    <div class="icon">🦸‍♂️</div>
+                    <h2>Meet Professor Python!</h2>
+                    <p>Your friendly guide in the world of coding. Ready to help you become a programming superhero!</p>
+                    <button class="btn" onclick="window.location.href='lesson.html' ">Get Started! 🚀</button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="number">8+</div>
+                    <p>Perfect for ages 8 and up</p>
+                </div>
+                <div class="stat">
+                    <div class="number">100%</div>
+                    <p>Fun and Interactive</p>
+                </div>
+                <div class="stat">
+                    <div class="number">0</div>
+                    <p>Experience Needed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
